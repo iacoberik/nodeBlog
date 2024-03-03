@@ -42,6 +42,12 @@ app.get("/about", (req, res) => {
 // Blog router
 app.use(blogRouters);
 
+// Redirecting
+// app.get("/about-me", (req, res) => {
+//   // res.sendFile("./view/about.html", { root: __dirname });
+//   res.render("about");
+// });
+
 // 404 page
 app.use((req, res) => {
   // res.status(404).sendFile("./view/404.html", { root: __dirname });
